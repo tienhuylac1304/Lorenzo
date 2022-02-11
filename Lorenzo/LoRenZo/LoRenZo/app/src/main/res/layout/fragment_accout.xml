@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/iconAccount"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_alignParentTop="true"/>
+
+<!--        <TextView-->
+<!--            android:layout_below="@+id/iconAccount"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Well come"-->
+<!--            android:fontFamily="sans-serif-condensed"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:textSize="30sp"-->
+<!--            android:background="#fff"-->
+<!--            android:textColor="#000"-->
+<!--            android:id="@+id/txtWelcom" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_below="@+id/txtWelcom"-->
+<!--            android:id="@+id/txtName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Nguyễn A"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="16dp"-->
+<!--            android:backgroundTintMode="screen"-->
+<!--            android:background="#FDF6F6">-->
+
+<!--        </androidx.appcompat.widget.AppCompatTextView>-->
+        <ScrollView
+            android:layout_above="@+id/btnLogout"
+            android:layout_below="@+id/iconAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                            android:drawableTint="#787474"
+                            android:drawablePadding="5dp"
+                            android:text="Họ tên: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtHoTen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nguyễn Văn A"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                            android:drawableTint="#787474"
+                            android:drawablePadding="5dp"
+                            android:text="Ngày sinh: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtNgaySinh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11/06/2000"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_wc_24"
+                            android:drawableTint="#787474"
+                            android:drawablePadding="5dp"
+                            android:text="Giới tính: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtGioiTinh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nam"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_my_location_24"
+                            android:drawableTint="#787474"
+                            android:drawablePadding="5dp"
+                            android:text="Address: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtAddres"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sư Vạn Hạnh"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                            android:drawableTint="#787474"
+                            android:drawablePadding="5dp"
+                            android:text="Số điện thoại: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtSDT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123456789"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_email_24"
+                            android:drawableTint="#787474"
+                            android:drawablePadding="5dp"
+                            android:text="Email: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="minhhieuHT116@gmail.com"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/botron_edittext2"
+        android:backgroundTint="@color/white"
+        android:drawableTint="@color/trang"
+        android:drawableLeft="@drawable/ic_baseline_thoat_walk_24"
+        android:text="Đăng xuất"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/trang"
+        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>
